@@ -15,14 +15,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    justify-content: flex-start; /* Đảm bảo nội dung không bị cắt */
+    min-height: 100vh; /* Đảm bảo chiều cao của trang ít nhất bằng chiều cao màn hình */
 }
 
 /* Tiêu đề nhóm */
 h2 {
     font-size: 26px;
-    color: #2c3e50;
+    color: #cbd2d9;
     margin-bottom: 20px;
     text-align: center;
     font-weight: bold;
@@ -88,6 +88,8 @@ button, #resetButton {
 @media (max-width: 600px) {
     body {
         padding: 10px;
+        justify-content: flex-start; /* Giữ cho nội dung bắt đầu từ trên cùng */
+        align-items: center;
     }
 
     h2 {
@@ -106,5 +108,10 @@ button, #resetButton {
 
     #resetButton {
         width: 100%;
+    }
+
+    /* Đảm bảo nội dung không bị ẩn dưới footer hoặc các phần tử khác */
+    #buttonsGroup1, #buttonsGroup2 {
+        margin-bottom: 10px;
     }
 }
