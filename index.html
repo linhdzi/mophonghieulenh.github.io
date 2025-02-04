@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sound Buttons</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Hiệu lệnh xe chip</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Liên kết file CSS -->
 </head>
 <body>
-    <div class="container">
-        
-        <button onclick="playSound('2_NguoiDiBo.mp3')">Phát âm thanh Người đi bộ</button>
-    </div>
+    <h2>Nhóm 1</h2>
+    <div id="buttonsGroup1"></div>
+
+    <h2>Nhóm 2</h2>
+    <div id="buttonsGroup2"></div>
+
+    <p>Điểm: <span id="score">100</span></p>
+    <button id="resetButton" onclick="resetScore()">Reset Điểm</button>
+
     <script src="script.js"></script>
 </body>
 </html>
